@@ -8,7 +8,6 @@ RUN apt update && apt install -y \
  && mkdir nmap && cd nmap \
  && curl -sL $NMAP_DOWNLOAD_LINK \
  |  bzip2 -cd - | tar xvf - --strip-components 1 \
- && cd nmap \
  && ./configure \
  && make install
 

@@ -8,5 +8,9 @@ RUN apt update && apt install -y \
  && curl -sL $NMAP_DOWNLOAD_LINK \
  |  bzip2 -cd - | tar xvf - \
  && cd nmap-7.92 \
- && ./configure --build=arm \
+ && ./configure \
  && make install
+
+ENTRYPOINT /usr/local/bin/ncat
+
+CMD ["--help"]

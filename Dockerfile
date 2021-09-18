@@ -6,7 +6,7 @@ RUN apt update && apt install -y \
       build-essential \
       curl \
  && curl -sL $NMAP_DOWNLOAD_LINK \
- |  bzip2 -cd - | tar xvf -
- && cd nmap-7.92
+ |  bzip2 -cd - | tar xvf - \
+ && cd nmap-7.92 \
  && ./configure --build=arm \
  && ./make install

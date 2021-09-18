@@ -1,4 +1,4 @@
-FROM debian:debian-slim
+FROM debian:11-slim
 
 COPY ["netcat-0.7.1.tar.gz", "/netcat.tar.gz"]
 

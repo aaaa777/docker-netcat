@@ -9,4 +9,4 @@ RUN apt update && apt install -y \
  |  bzip2 -cd - | tar xvf - \
  && cd nmap-7.92 \
  && ./configure --build=arm \
- && ./make install
+ && make install

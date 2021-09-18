@@ -11,6 +11,6 @@ RUN apt update && apt install -y \
  && ./configure \
  && make install
 
-ENTRYPOINT /bin/sh
+ENTRYPOINT ncat
 
-CMD ["ncat", "--help"]
+CMD ["--help"]

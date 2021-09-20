@@ -12,5 +12,6 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  shell: bash
   #args:
   #  - ${{ inputs.who-to-greet }}

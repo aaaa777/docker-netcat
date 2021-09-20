@@ -22,3 +22,4 @@ jobs:
     #  uses: actions/
     - name: Test
       uses: aaaa777/docker-netcat@v1
+      shell: bash

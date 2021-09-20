@@ -18,3 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ncat:$(date +%s)
+    #- name: Login DockerHub
+    #  uses: actions/
+    - name: Test
+      uses: aaaa777/docker-netcat@v1

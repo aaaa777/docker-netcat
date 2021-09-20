@@ -3,6 +3,6 @@
 [nmap/ncat binaries](https://nmap.org/dist/nmap-7.92.tar.bz2)
 
 # ENVIRONMENTS
-$CONFIGURE_OPTIONS
+### `$CONFIGURE_OPTIONS`
 
 i.e.) `--build=arm`
